@@ -1,0 +1,29 @@
+Starting the development server...
+
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/home/cfws/Documents/code/JPMC_SoftwareEngVE/JPMC-tech-task-2-Py3/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:244:19)
+    at Object.watch (node:fs:2301:34)
+    at createFsWatchInstance (/home/cfws/Documents/code/JPMC_SoftwareEngVE/JPMC-tech-task-2-Py3/node_modules/chokidar/lib/nodefs-handler.js:37:15)
+    at setFsWatchListener (/home/cfws/Documents/code/JPMC_SoftwareEngVE/JPMC-tech-task-2-Py3/node_modules/chokidar/lib/nodefs-handler.js:80:15)
+    at FSWatcher.NodeFsHandler._watchWithNodeFs (/home/cfws/Documents/code/JPMC_SoftwareEngVE/JPMC-tech-task-2-Py3/node_modules/chokidar/lib/nodefs-handler.js:232:14)
+    at FSWatcher.NodeFsHandler._handleDir (/home/cfws/Documents/code/JPMC_SoftwareEngVE/JPMC-tech-task-2-Py3/node_modules/chokidar/lib/nodefs-handler.js:414:19)
+    at FSWatcher.<anonymous> (/home/cfws/Documents/code/JPMC_SoftwareEngVE/JPMC-tech-task-2-Py3/node_modules/chokidar/lib/nodefs-handler.js:462:19)
+    at FSWatcher.<anonymous> (/home/cfws/Documents/code/JPMC_SoftwareEngVE/JPMC-tech-task-2-Py3/node_modules/chokidar/lib/nodefs-handler.js:467:16)
+    at FSReqCallback.oncomplete (node:fs:207:5)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (/home/cfws/Documents/code/JPMC_SoftwareEngVE/JPMC-tech-task-2-Py3/node_modules/chokidar/index.js:260:10)
+    at createFsWatchInstance (/home/cfws/Documents/code/JPMC_SoftwareEngVE/JPMC-tech-task-2-Py3/node_modules/chokidar/lib/nodefs-handler.js:39:5)
+    at setFsWatchListener (/home/cfws/Documents/code/JPMC_SoftwareEngVE/JPMC-tech-task-2-Py3/node_modules/chokidar/lib/nodefs-handler.js:80:15)
+    [... lines matching original stack trace ...]
+    at FSReqCallback.oncomplete (node:fs:207:5) {
+  errno: -28,
+  syscall: 'watch',
+  code: 'ENOSPC',
+  path: '/home/cfws/Documents/code/JPMC_SoftwareEngVE/JPMC-tech-task-2-Py3/public',
+  filename: '/home/cfws/Documents/code/JPMC_SoftwareEngVE/JPMC-tech-task-2-Py3/public'
+}
+cfws@cs-LiteLaptop:~/Documents/code/JPMC_SoftwareEngVE/JPMC-tech-task-2-Py3$ 
